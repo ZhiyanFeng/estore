@@ -1,0 +1,117 @@
+OVERALL: 80
+
+Overall Comment
+
+# Group Details
+
+* members g3vishra, c4fengzi 
+* AMI ami-3453c35c
+
+# User-functionality
+
+## Create Account
+
+-1 RAW PHP (had database errors)
+
++1 check required fields 
++1 check password length 
++2 could create account normally
+
+## User Login
+
++1 check required fields 
++1 failed to login with random account (and there is an error msg) 
+-1 could login with admin/* 
+no such account 
++1 could login with newly created account
+
+# Browse Inventory
+
++1 Cannot view without login, or at least warn at checkout 
++1 Lists database items 
++1 Shows secondary information 
++1 Shows pictures
+
+# Shopping Cart - Add
+
++1 Could add first item to cart 
++1 Is persistent in cart 
++1 Can add multiple items to cart 
++1 Groups by products in cart
+
+# Shopping Cart - Qty
+
++1 Can add more 
+-1 Can reduce 
++1 Check against qty going to 0 
++1 Qty cannot go negative
+
+# Shopping Cart - Delete
+
+-2 Can delete non-last-item 
+-2 Can delete last item
+
+# Shopping Cart - Cost
+
++4 Correct costs
+
+# Checkout - Client Side
+
+-1 make all fields required 
+-1 length checking on CC 
+-1 bounds checking on month and year 
+-1 CC not expired
+
+# Checkout - Server-side Validation
+
++1 required fields check / CC length check 
++1 valid date check 
++1 CC expiry check 
++1 can enter valid data
+
+# Checkout - Collect Info
+
+2 order products and qty are correct 
+1 order total displayed correctly (2 decimals) 
+1 order total displayed correctly
+
+# Checkout - Print
+
+4 opens print dialog
+
+# Checkout - email
+
++2 got email 
++1 email has correct order info 
++1 email formatting
+
+# Access Control to Admin Pages
+
++1 Can see special admin menu after login in as admin/admin 
+-1 Fail to access with 0 auth 
+-2 Fail to access with normal auth
+
+# Admin - Change Products
+
++1 Can add product 
+-1 Can add custom picture 
++1 Can delete 
++1 Can edit
+
+# Admin - Finalized Orders
+
++4 do the thing
+
+# Admin - Delete Info
+
++3 do the thing 
+-1 display some sort of indicator that there are no orders
+
+# Ease of Use
+
+-1 The qty is not persistent when viewing product list
+
+# Documentation
+
+4
+

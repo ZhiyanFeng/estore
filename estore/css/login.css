@@ -1,0 +1,24 @@
+li {
+	float:left;
+}
+
+table {
+  border-spacing: 2em;
+}
+
+th,td {
+padding: 2em;
+text-align: center;
+}
+
+.site-footer {
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+	left: 0;
+	background: #B6CDCD;
+	overflow-y: hidden;
+}
+.bottom-p{
+	align: left;
+}
